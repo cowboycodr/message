@@ -29,7 +29,8 @@ export default tseslint.config(
 	{
 		ignores: ['build/', '.svelte-kit/', 'dist/'],
 		rules: {
-			'@typescript-eslint/no-require-imports': 'off'
+			'@typescript-eslint/no-require-imports': 'warn',
+			'@typescript-eslint/no-unused-vars': 'warn'
 		}
 	}
 );

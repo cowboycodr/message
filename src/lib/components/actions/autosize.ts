@@ -6,7 +6,7 @@ import type { Action } from 'svelte/action';
  *
  * @param {HTMLTextAreaElement} node - The textarea element to be resized.
  */
-export const autosize: Action<HTMLTextAreaElement> = (node) => {
+export const autosize: Action<HTMLTextAreaElement, string> = (node, _value) => {
 	const handleResize = (): void => {
 		node.style.height = 'auto';
 		node.style.height = `${node.scrollHeight}px`;
